@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="https://kit.fontawesome.com/6a1e6c7ea7.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="icon" href="https://enactus.org/wp-content/themes/enactus/favicon.ico" type="image/icon type">
+    <title>Enactus FSM - Home</title>
+</head>
+<body>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+    <header>
+        <div class="nav-logo">
+            <img src="/images/logo1.png" alt="enactus-Logo" width="150px">
+        </div>
+        <div class="nav-links" id="myTopnav">
+            <a href="index.html">HOME</a>
+            <a href="./ourhistory.html">OUR HISTORY</a>
+            <a href="./ourteam.html">OUR TEAM</a>
+            <a href="joinus.html">JOIN US</a>
+            <a href="contactus.html">CONTACT US</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+    </header>
+    <div class="hero">
+        <div class="titles">
+            <h1 class="animate__animated animate__fadeInDown animate__slow">ENACTUS</h1>
+            <h2 class="animate__animated animate__fadeInLeft animate__slow animate__delay-1s">Faculty of Sciences of Monastir</h2>
+            <h3 class="animate__animated animate__fadeInLeft animate__slow animate__delay-1s">We Live our Values of integrity, Passion, Innovation and collaboration in all that we do.</h3>
+        </div>
+        <div class="container">
+            <div class="chevron"></div>
+            <div class="chevron"></div>
+            <div class="chevron"></div>
+            <span class="text">Scroll down</span>
+          </div>
+    </div>
+
+
+    <div class="hero2">
+        <div class="hero2-header">
+            <h1 data-aos="zoom-in" data-aos-duration="2000">What is Enactus?</h1>
+            <p data-aos="fade-up" data-aos-duration="2000" data-aos-delay="100">Enactus is an international organization that connects student,<br> academic and business leaders through entrepreneurial-based <br> projects that empower people to transform opportunities into real, <br> sustainable progress for themselves and their communities.</p>
+        </div>
+        <div class="hero2-cartes">
+            <div class="carte">
+                <h3 data-aos="flip-left" data-aos-duration="2000" data-aos-delay="100">37</h3>
+                <h5>COUNTRIES</h5>
+            </div>
+            <hr>
+            <div class="carte">
+                <h3 data-aos="flip-left" data-aos-duration="2000" data-aos-delay="100">+7,500   </h3>
+                <h5>STUDENT MEMBERS IN TUNISIA</h5>
+            </div>
+            <hr>
+            <div class="carte">
+                <h3 data-aos="flip-left" data-aos-duration="2000" data-aos-delay="100">73</h3>
+                <h5>TUNISIAN UNIVERSITIES</h5>
+            </div>
+            <hr>
+            <div class="carte">
+                <h3 data-aos="flip-left" data-aos-duration="2000" data-aos-delay="100">1,045,000</h3>
+                <h5>VOLUNTEER HOURS</h5>
+            </div>
+        </div>
+        <iframe data-aos="fade-up"  data-aos-duration="2000" width="560" height="315" src="https://www.youtube.com/embed/kUba3zqVyx8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <div class="hero2-footer">
+            <a target="_blank" href="https://enactus.org/who-we-are/our-story/">READ MORE</a>
+        </div>
+    </div>
+
+    <div class="hero3">
+        <h1 data-aos="fade-down"
+        data-aos-easing="linear"
+        data-aos-duration="1500">WE BELIEVE INVESTING IN STUDENTS WHO TAKE ENTREPRENEURIAL ACTION FOR OTHERS CREATES A BETTER WORLD FOR US ALL</h1>
+    </div>
+    <div class="hero4">
+        <h2 data-aos="zoom-in" data-aos-duration="1500">OUR VISION</h2>
+        <h4 data-aos="zoom-in" data-aos-duration="1500">Creating a better and more sustainable world</h4>
+        <h2 data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="200">OUR MISSION</h2>
+        <h4 data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="200">Encourage the new generation of leaders to use innovation and business principles to improve the world</h4>
+        <hr>
+        <h2 data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="500" >OUR VALUES</h2>
+        <h4 data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="500">Integrity, Passion, Innovation and Collaboration</h4>
+    </div>
+
+    <footer>
+        <div class="sociallinks">
+            <h4> OUR SOCIAL LINKS :</h4>
+            <a target="_blank" href="https://www.facebook.com/Enactus-FSM-100612668764764"><i class="fab fa-facebook-square"></i></a>
+            <a target="_blank" href="https://www.instagram.com/enactusfsm/"><i class="fab fa-instagram-square"></i></a>
+        </div>
+        <div class="footer-body">
+            <p>enactus.fsmonastir@gmail.com</p>
+            <p>&copy; Enactus Fsm Tun, Inc. All rights reserved</p>
+            <p style="font-size: 10px;">Made with  <span style="color: #e25555;"> &#9829; </span> In Tunisia, By Louay Beltifa</p>
+        </div>
+    </footer>
+
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "nav-links") {
+              x.className += " responsive";
+            } else {
+              x.className = "nav-links";
+            }
+          }
+
+        //Get the button
+        var mybutton = document.getElementById("myBtn");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {scrollFunction()};
+
+        function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+        } else {
+            mybutton.style.display = "none";
+        }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+        }
+    </script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+</body>
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/6a1e6c7ea7.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="icon" href="https://enactus.org/wp-content/themes/enactus/favicon.ico" type="image/icon type">
+    <link rel="stylesheet" href="styles/contactus.css">
+    <title>Enactus FSM - Contact Us</title>
+</head>
+<body>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+    <header>
+        <div class="nav-logo">
+            <img src="/images/logo1.png" alt="enactus-Logo" width="150px">
+        </div>
+        <div class="nav-links" id="myTopnav">
+            <a href="index.html">HOME</a>
+            <a href="./ourhistory.html">OUR HISTORY</a>
+            <a href="./ourteam.html">OUR TEAM</a>
+            <a href="joinus.html">JOIN US</a>
+            <a href="contactus.html">CONTACT US</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+    </header>
+
+
+    <div class="main">
+        <div class="main-header">
+            <h1>Contact Us</h1>
+            <p>Do you want to join the team? <br> or maybe you're curious to learn more? <br> We'd love to connect with you!</p>
+        </div>
+        <div class="main-body">
+            <form class="form">
+                <input type="text" placeholder="Full Name*" required id="fullname"><br>
+                <input type="email" placeholder="Email adress*" required id="email"><br>
+                <textarea name="Message" id="" cols="30" rows="10" placeholder="Your Message ..." class="message"></textarea><br>
+                <button id="sender">Send</button>
+            </form>
+            <div class="success" id="success">
+                <h1>Thank you for getting in touch!</h1>
+                <p>We appreciate you contacting us. <br> One of our colleagues will get back in touch with you soon! Have a great day!</p>
+                <i class="fas fa-check-circle"></i>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    
+    <footer>
+        <div class="sociallinks">
+            <h4> OUR SOCIAL LINKS :</h4>
+            <a target="_blank" href="https://www.facebook.com/Enactus-FSM-100612668764764"><i class="fab fa-facebook-square"></i></a>
+            <a target="_blank" href="https://www.instagram.com/enactusfsm/"><i class="fab fa-instagram-square"></i></a>
+        </div>
+        <div class="footer-body">
+            <p>enactus.fsmonastir@gmail.com</p>
+            <p>&copy; Enactus Fsm Tun, Inc. All rights reserved</p>
+            <p style="font-size: 10px;">Made with  <span style="color: #e25555;"> &#9829; </span> In Tunisia, By Louay Beltifa</p>
+        </div>
+    </footer>
+
+    <script type="module" src="scripts/firebase.js"></script>
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "nav-links") {
+              x.className += " responsive";
+            } else {
+              x.className = "nav-links";
+            }
+          }
+
+        //Get the button
+        var mybutton = document.getElementById("myBtn");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {scrollFunction()};
+
+        function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+        } else {
+            mybutton.style.display = "none";
+        }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+        }
+    </script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+</body>
+</html>

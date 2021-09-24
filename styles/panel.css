@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,500;0,700;1,600&display=swap');
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+html{ 
+  scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+
+
+header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 10px 60px;
+}
+
+.text {
+    display: flex;
+    margin: 0 0 0 20px;
+}
+
+.text h1 {
+    font-size: 20px;
+    margin: 5px 20px 0 20px;
+}
+
+.text button {
+    background-color: white;
+    color: #e4ab1c;
+    border: 1px solid #e4ab1c;
+    padding: 10px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.4s ease;
+}
+
+.text button:hover {
+    background-color: #e4ab1c;
+    color: white;
+}
+
+
+@media screen and (max-width : 900px) {
+    header {
+        padding: 5px;
+        flex-direction: column;
+    }
+    .logo img {
+        width: 200px;
+        margin-left: 0px;
+    }
+    .text{
+        margin: 0;
+    }
+    
+    .text h1 {
+        font-size: 20px;
+    }
+}
+
+
+
+/* ----------------- MAIN STYLE ------------------- */
+
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.messagespanel {
+    align-items: center;
+}
+
+.title {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    color: #e4ab1c;
+}
+
+.messagetable{
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.messagetable td, .messagetable th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+.messagetable th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #e4ab1c;
+    color: rgb(39, 39, 39);
+}
+
+@media screen and (max-width: 900px) {
+     .title {
+        font-size: 14px;
+    }
+
+    .messagetable th {
+        font-size: 11px;
+    }
+
+    .messagetable td {
+        font-size: 10px;
+    }
+    
+}
+
+.joinuspanel {
+    align-items: center;
+}
+
+.recruttable {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.recruttable td, .recruttable th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+.recruttable th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #e4ab1c;
+    color: rgb(39, 39, 39);
+}
+
+@media screen and (max-width: 900px) {
+    .title {
+       font-size: 14px;
+   }
+
+   .recruttable th {
+       font-size: 11px;
+   }
+
+   .recruttable td {
+       font-size: 10px;
+   }
+
+   .joinuspanel {
+    margin-left: 100px;
+}
+}

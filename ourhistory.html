@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/ourhistory.css">
+    <script src="https://kit.fontawesome.com/6a1e6c7ea7.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="icon" href="https://enactus.org/wp-content/themes/enactus/favicon.ico" type="image/icon type">
+    <title>Enactus FSM - Our History</title>
+</head>
+<body>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+    <header>
+        <div class="nav-logo">
+            <img src="/images/logo1.png" alt="enactus-Logo" width="150px">
+        </div>
+        <div class="nav-links" id="myTopnav">
+            <a href="index.html">HOME</a>
+            <a href="./ourhistory.html">OUR HISTORY</a>
+            <a href="./ourteam.html">OUR TEAM</a>
+            <a href="joinus.html">JOIN US</a>
+            <a href="contactus.html">CONTACT US</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+    </header>
+
+    <div class="banner">
+        <h1>Our History</h1><br>
+        <p>Scroll Down</p>
+        <p class="ro">></p>
+    </div>
+
+    <div class="main">
+        <div class="timeline">
+            <div class="container right" class="container left"data-aos="flip-up" data-aos-duration="1000">
+              <div class="date">18 May</div>
+              <i class="icon fa fa-running"></i>
+              <div class="content">
+                <h2><strong> 07 April 2021: Our First Event "First Step"</strong></h2>
+                <p>
+                    Enactus fsm announces her LAUNCHING DAY in the FACULTY of SCIENCES of MONASTIR. with our first event "First step"
+                </p>
+              </div>
+            </div>
+            <div class="container left" data-aos="flip-up" data-aos-duration="1000" data-aos-delay="100">
+              <div class="date">10 Feb</div>
+              <i class="icon fa fa-cog"></i>
+              <div class="content">
+                <h2><strong>04 April 2021: Our first Competiton and first Prize </strong></h2>
+                <p style="font-size: 14px;">
+                    We had our first step in Hotel "Skans Serail" with the help of Sanitas Pioneer Enterprise  and INJAZ Tunisia . It was such a great experience in which we learned many entrepreneurial skills and ended up being in 2nd place 🥈 in the competition organized in the end of the day in presence of COLLECTIVELAB 
+                </p>
+              </div>
+            </div>
+            <div class="container right" data-aos="flip-up" data-aos-duration="1000" data-aos-delay="200">
+              <div class="date">01 mars</div>
+              <i class="icon fa fa-certificate"></i>
+              <div class="content">
+                <h2><strong>01 March 2021 : club creation</strong></h2>
+                <p>
+                  <strong> Faculty Advisors : </strong>Rami mestiri <br>
+                  <strong> Team Leader : </strong>Koussay hadded <br>
+                  <strong> Vice Team Leader : </strong> louay beltifa <br>
+                  <strong> Team : </strong> 20 members
+                </p>
+              </div>
+            </div>
+          </div>
+    </div>
+
+
+
+
+
+
+    <footer>
+        <div class="sociallinks">
+            <h4> OUR SOCIAL LINKS :</h4>
+            <a target="_blank" href="https://www.facebook.com/Enactus-FSM-100612668764764"><i class="fab fa-facebook-square"></i></a>
+            <a target="_blank" href="https://www.instagram.com/enactusfsm/"><i class="fab fa-instagram-square"></i></a>
+        </div>
+        <div class="footer-body">
+            <p>enactus.fsmonastir@gmail.com</p>
+            <p>&copy; Enactus Fsm Tun, Inc. All rights reserved</p>
+            <p style="font-size: 10px;">Made with  <span style="color: #e25555;"> &#9829; </span> In Tunisia, By Louay Beltifa</p>
+        </div>
+    </footer>
+
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "nav-links") {
+              x.className += " responsive";
+            } else {
+              x.className = "nav-links";
+            }
+          }
+
+        //Get the button
+        var mybutton = document.getElementById("myBtn");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {scrollFunction()};
+
+        function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+        } else {
+            mybutton.style.display = "none";
+        }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+        }
+    </script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+</body>
+</html>

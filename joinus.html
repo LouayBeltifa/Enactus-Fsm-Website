@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/6a1e6c7ea7.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="icon" href="https://enactus.org/wp-content/themes/enactus/favicon.ico" type="image/icon type">
+    <link rel="stylesheet" href="styles/joinus.css">
+    <title>Enactus FSM - Join Us</title>
+</head>
+<body>
+  <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+    <header>
+        <div class="nav-logo">
+            <img src="/images/logo1.png" alt="enactus-Logo" width="150px">
+        </div>
+        <div class="nav-links" id="myTopnav">
+            <a href="index.html">HOME</a>
+            <a href="./ourhistory.html">OUR HISTORY</a>
+            <a href="./ourteam.html">OUR TEAM</a>
+            <a href="joinus.html">JOIN US</a>
+            <a href="contactus.html">CONTACT US</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+    </header>
+    
+
+
+    <div class="main">
+      <div class="main-header">
+        <h1>WE'RE HIRING</h1>
+        <h3>BEFORE YOU APPLY, A FEW THINGS YOU SHOULD KNOW...</h3>
+        <p> &starf; At Enactus FSM, we believe in investing our time to impact and shape our community for the better.  This mission requires a time commitment from each and every one of our members. </p>
+        <p> &starf; By applying for an Enactus FSM position, you understand that you are devoted to a minimum time commitment of 5 hours per week (exceptions for exam and holiday seasons). <br> Project Managers and Directors will require a larger time commitment. You are expected to complete your tasks throughout the entire academic year.</p>
+        <p> &starf; Once you submit your application, you may be contacted to schedule an interview within two weeks. If you are selected, you will start in October 2021 and your term will run until May 2022.</p>
+      </div>
+
+      <div class="main-body">
+        <form class="form">
+          <input type="text" placeholder="First Name" required id="firstname"><br>
+          <input type="text" placeholder="Last Name" required id="lastname"><br>
+          <input type="email" placeholder="Email" required id="email"><br>
+          <input type="tel" placeholder="Phone Number" required id="phonenumber"><br>
+          <label for="schoollevel">chose you school level</label><br>
+          <select name="schoollevel" id="schoollevel" required>
+            <option value="1styear">1st year</option>
+            <option value="2ndyear">2nd year</option>
+            <option value="3rdyear">3rd year</option>
+            <option value="master">master</option>
+            <option value="other">other</option>
+          </select><br>
+          <input type="text" placeholder="Sector" required id="sector"><br>
+          <button type="submit">submit</button>
+        </form>
+        <div class="success" id="success">
+          <h1>your submission has been successfully sent</h1>
+          <p>We will get back in touch with you soon to schedule an interview! Have a great day!</p>
+          <i class="fas fa-check-circle"></i>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+    <footer>
+      <div class="sociallinks">
+          <h4> OUR SOCIAL LINKS :</h4>
+          <a target="_blank" href="https://www.facebook.com/Enactus-FSM-100612668764764"><i class="fab fa-facebook-square"></i></a>
+          <a target="_blank" href="https://www.instagram.com/enactusfsm/"><i class="fab fa-instagram-square"></i></a>
+      </div>
+      <div class="footer-body">
+          <p>enactus.fsmonastir@gmail.com</p>
+          <p>&copy; Enactus Fsm Tun, Inc. All rights reserved</p>
+          <p style="font-size: 10px;">Made with  <span style="color: #e25555;"> &#9829; </span> In Tunisia, By Louay Beltifa</p>
+      </div>
+    </footer>
+
+
+
+
+
+    <script type="module" src="scripts/firebase2.js"></script>
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "nav-links") {
+              x.className += " responsive";
+            } else {
+              x.className = "nav-links";
+            }
+          }
+
+        //Get the button
+        var mybutton = document.getElementById("myBtn");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {scrollFunction()};
+
+        function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+        } else {
+            mybutton.style.display = "none";
+        }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+        }
+    </script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+</body>
+</html>
